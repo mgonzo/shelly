@@ -1,0 +1,26 @@
+{
+  "name": "emu",
+  "version": "1.0.0",
+  "description": "terminal emulator",
+  "main": "''",
+  "dependencies": {
+    "gulp-babel": "^6.1.1",
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13"
+  },
+  "scripts": {
+    "test": "''"
+  },
+  "repository": {
+    "type": "git",
+    "url": "''"
+  },
+  "keywords": [
+    "''"
+  ],
+  "author": "mgonzo",
+  "license": "''"
+}

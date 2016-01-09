@@ -1,0 +1,48 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="xs.css">
+        <style>
+            #shelly {
+                width: 400px;
+                height: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="shelly"></div>
+        <script src="js/react.js"></script>
+        <script src="js/react-dom.js"></script>
+        <script src="js/shelly.js"></script>
+        <script>
+            // send a message to print
+            var clicked = function clicked(e) {
+                e.target.dispatchEvent(
+                  new CustomEvent('messageIn', {
+                     detail: { message: 'hello from outside.'},
+                     bubbles: true,
+                     cancelable: true
+                }));
+            };
+            document.body.addEventListener('click',clicked, false);
+
+            // render the component with a custom command
+            //ReactDOM.render( <Shelly/>, document.getElementById('shelly'));
+            var cmd = {
+                custom: function (arr) {
+                    console.log(this);
+                    this.print('hello this is custom');
+                }
+            };
+
+            ReactDOM.render(React.createElement(Shelly, {commands: cmd}), document.getElementById('shelly'));
+
+        </script>
+    </body>
+</html>

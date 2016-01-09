@@ -1,0 +1,73 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/mgonzo/.nvm/v0.10.40/bin/node',
+1 verbose cli   '/home/mgonzo/.nvm/v0.10.40/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'babel-preset-2015',
+1 verbose cli   '--save-dev' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.40
+4 warn package.json emu@1.0.0 No README data
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'babel-preset-2015', null ]
+7 verbose cache add name=undefined spec="babel-preset-2015" args=["babel-preset-2015",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'babel-preset-2015',
+8 verbose parsed url   path: 'babel-preset-2015',
+8 verbose parsed url   href: 'babel-preset-2015' }
+9 silly lockFile e601356c-babel-preset-2015 babel-preset-2015
+10 verbose lock babel-preset-2015 /home/mgonzo/.npm/e601356c-babel-preset-2015.lock
+11 silly lockFile e601356c-babel-preset-2015 babel-preset-2015
+12 silly lockFile e601356c-babel-preset-2015 babel-preset-2015
+13 verbose addNamed [ 'babel-preset-2015', '' ]
+14 verbose addNamed [ null, '*' ]
+15 silly lockFile 4c87d21b-babel-preset-2015 babel-preset-2015@
+16 verbose lock babel-preset-2015@ /home/mgonzo/.npm/4c87d21b-babel-preset-2015.lock
+17 silly addNameRange { name: 'babel-preset-2015', range: '*', hasData: false }
+18 verbose request where is /babel-preset-2015
+19 verbose request registry https://registry.npmjs.org/
+20 verbose request id e6356cdfa89ef361
+21 verbose url raw /babel-preset-2015
+22 verbose url resolving [ 'https://registry.npmjs.org/', './babel-preset-2015' ]
+23 verbose url resolved https://registry.npmjs.org/babel-preset-2015
+24 verbose request where is https://registry.npmjs.org/babel-preset-2015
+25 info trying registry request attempt 1 at 14:50:34
+26 http GET https://registry.npmjs.org/babel-preset-2015
+27 http 404 https://registry.npmjs.org/babel-preset-2015
+28 silly registry.get cb [ 404,
+28 silly registry.get   { 'content-type': 'application/json',
+28 silly registry.get     'cache-control': 'max-age=0',
+28 silly registry.get     'content-length': '2',
+28 silly registry.get     'accept-ranges': 'bytes',
+28 silly registry.get     date: 'Thu, 07 Jan 2016 21:51:55 GMT',
+28 silly registry.get     via: '1.1 varnish',
+28 silly registry.get     age: '0',
+28 silly registry.get     connection: 'keep-alive',
+28 silly registry.get     'x-served-by': 'cache-lax1434-LAX',
+28 silly registry.get     'x-cache': 'MISS',
+28 silly registry.get     'x-cache-hits': '0',
+28 silly registry.get     'x-timer': 'S1452203515.598438,VS0,VE320' } ]
+29 silly lockFile 4c87d21b-babel-preset-2015 babel-preset-2015@
+30 silly lockFile 4c87d21b-babel-preset-2015 babel-preset-2015@
+31 error 404 Not Found
+31 error 404
+31 error 404 'babel-preset-2015' is not in the npm registry.
+31 error 404 You should bug the author to publish it
+31 error 404 It was specified as a dependency of 'emu'
+31 error 404
+31 error 404 Note that you can also install from a
+31 error 404 tarball, folder, or http url, or git url.
+32 error System Linux 3.16.0-38-generic
+33 error command "/home/mgonzo/.nvm/v0.10.40/bin/node" "/home/mgonzo/.nvm/v0.10.40/bin/npm" "install" "babel-preset-2015" "--save-dev"
+34 error cwd /home/mgonzo/emu
+35 error node -v v0.10.40
+36 error npm -v 1.4.28
+37 error code E404
+38 verbose exit [ 1, true ]
